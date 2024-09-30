@@ -13,7 +13,7 @@ public class SubmitFormLogin implements Task {
     @Step ("{0} submit the form login")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue("german.arenass@autonoma.edu.co").into(EMAIL_FIELD),
+                Enter.theValue("gerasman827@gmail.com").into(EMAIL_FIELD),
                 Enter.theValue("Holamundo123").into(PASSWORD_FIELD),
                 Click.on(SIGN_IN_BUTTON)
         );

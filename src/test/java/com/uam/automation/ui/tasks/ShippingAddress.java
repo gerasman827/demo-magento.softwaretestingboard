@@ -19,16 +19,17 @@ public class ShippingAddress implements Task {
     @Step ("{0} Shipping address")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-//                Enter.theValue("Universidad Autónoma de Manizales").into(SHIPPING_ADDRESS_COMPANY),
-//                Enter.theValue("Universidad Autónoma de Manizales").into(SHIPPING_ADDRESS_STREETADDRESS),
-//                Enter.theValue("Manizales").into(SHIPPING_ADDRESS_CITY),
-//                Click.on(SHIPPING_ADDRESS_COUNTRY),
-//                SelectFromOptions.byValue(SHIPPING_ADDRESS_VALUE_COUNTRY).from(SHIPPING_ADDRESS_COUNTRY),
-//                Click.on(SHIPPING_ADDRESS_STATE),
-//                SelectFromOptions.byValue(SHIPPING_ADDRESS_VALUE_STATE).from(SHIPPING_ADDRESS_STATE),
-//                Enter.theValue("170001").into(SHIPPING_ADDRESS_POSTALCODE),
-//                Enter.theValue("3136620429").into(SHIPPING_ADDRESS_PHONE_NUMBER),
-//                WaitUntil.the(BUTTON_NEXT, isClickable()).forNoMoreThan(10).seconds(),
+                Enter.theValue("Universidad Autónoma de Manizales").into(SHIPPING_ADDRESS_COMPANY),
+                Enter.theValue("Universidad Autónoma de Manizales").into(SHIPPING_ADDRESS_STREETADDRESS),
+                Enter.theValue("Manizales").into(SHIPPING_ADDRESS_CITY),
+                Click.on(SHIPPING_ADDRESS_COUNTRY),
+                SelectFromOptions.byValue(SHIPPING_ADDRESS_VALUE_COUNTRY).from(SHIPPING_ADDRESS_COUNTRY),
+                Click.on(SHIPPING_ADDRESS_STATE),
+                SelectFromOptions.byValue(SHIPPING_ADDRESS_VALUE_STATE).from(SHIPPING_ADDRESS_STATE),
+                Enter.theValue("170001").into(SHIPPING_ADDRESS_POSTALCODE),
+                Enter.theValue("3136620429").into(SHIPPING_ADDRESS_PHONE_NUMBER),
+                Click.on(SHIPPING_METHOD),
+                WaitUntil.the(BUTTON_NEXT, isClickable()).forNoMoreThan(10).seconds(),
                 Click.on(BUTTON_NEXT)
         );
     }

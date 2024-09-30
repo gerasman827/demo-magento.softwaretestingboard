@@ -30,6 +30,9 @@ public class ShippingAddress extends PageObject {
     public static final Target SHIPPING_ADDRESS_PHONE_NUMBER = Target.the("PhoneNumber")
             .locatedBy("//input[contains(@name,'telephone')]");
 
+    public static final Target SHIPPING_METHOD = Target.the("Shipping Methods")
+            .locatedBy("//*[@id=\"checkout-shipping-method-load\"]/table/tbody/tr[2]/td[1]");
+
     public static final Target BUTTON_NEXT = Target.the("Continue with purchase")
             .located(By.className("continue"));  // con xpath no funcionó: button[@type='submit']
 
